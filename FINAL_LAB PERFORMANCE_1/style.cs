@@ -6,8 +6,39 @@
 
 #display {
     text-align: right;
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    background-color: #808080;
+    color: white;
+    transition: 0.5s ease-in-out;
 }
