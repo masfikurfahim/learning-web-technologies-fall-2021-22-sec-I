@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <h2 >Calculator</h2>
+        <script>
+            function insert(num){
+                document.form.textview.value= document.form.textview.value+num
+            }
+            function equal(){
+                var exp=document.form.textview.value;
+                if(exp){
+                document.form.textview.value=eval(exp)
+                }
+            }
+        </script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
